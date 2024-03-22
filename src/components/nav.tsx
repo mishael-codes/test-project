@@ -4,8 +4,8 @@ import {
   Stack,
   CommandBar,
   ICommandBarItemProps,
-  PrimaryButton,
 } from "@fluentui/react";
+import Button from "./button";
 
 const Nav: React.FC = () => {
   const items: ICommandBarItemProps[] = [
@@ -36,15 +36,6 @@ const Nav: React.FC = () => {
       minWidth: 400,
     },
   };
-  const buttonStyles = {
-    root: {
-      borderRadius: "100px",
-      backgroundColor: "#006B5E",
-      padding: "12px",
-      width: "164px",
-      height: "54px"
-    },
-  };
   const commandBarStyles = {
     root: {
       padding: "12px"
@@ -58,7 +49,7 @@ const Nav: React.FC = () => {
       <Stack horizontal verticalAlign="center" horizontalAlign="end" styles={navBarStyles}>
         <CommandBar items={items} ariaLabel="Navbar" styles={commandBarStyles} />
 
-        <PrimaryButton text="Contact Us" styles={buttonStyles} />
+        <Button text="Contact Us" />
       </Stack>
     </Stack>
   );

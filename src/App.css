@@ -5,10 +5,38 @@
 }
 
 @font-face{
+  font-family: Montserrat-Light;
+  src: url('./assets/fonts/static/Montserrat-Light.ttf');
+}
+@font-face{
   font-family: Montserrat-Medium;
-  src: url('./assets/fonts/static/Montserrat-Medium.ttf');
+  src: url('./assets/fonts/static/Montserrat-Regular.ttf');
 }
 @font-face{
   font-family: Montserrat-Bold;
+  src: url('./assets/fonts/static/Montserrat-SemiBold.ttf');
+}
+@font-face{
+  font-family: Montserrat-ExtraBold;
   src: url('./assets/fonts/static/Montserrat-Bold.ttf');
+}
+
+.top-rect{
+  top: 0;
+  left: 118px;
+}
+
+.bottom-rect{
+  bottom: 0;
+  right: 118px;
+}
+
+.top-eclip{
+  top: 0;
+  right: 118px
+}
+
+.bottom-eclip{
+  bottom: 0;
+  left: 118px;
 }
