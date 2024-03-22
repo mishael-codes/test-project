@@ -1,8 +1,12 @@
+// Fleunt UI imports
 import { Stack, TextField } from "@fluentui/react";
+// Image imports
 import heroImage1 from "../../assets/images/Rectangle 41.png";
 import heroImage2 from "../../assets/images/Rectangle 42.png";
+// Fluent UI Icons
 import { ChromeBackMirroredIcon } from "@fluentui/react-icons-mdl2";
 
+// Type interface for styles
 interface ParagraphStyles {
   root: React.CSSProperties;
 }
@@ -20,18 +24,17 @@ interface ImageContainerStyles {
   img2: React.CSSProperties;
 }
 
+// React Functional Component
 const Hero: React.FC = () => {
+  const greenColor = "#006B5E"
+
+  // container styles
   const stackContainer = {
     root: {
-      /* display: "flex",
-      alignItems: "center",
-      justifyContent: "center" */
       marginTop: "100px",
       padding: "0 50px",
     },
   };
-
-  const greenColor = "#006B5E"
 
   const heroStyles1 = {
     //Best team and images

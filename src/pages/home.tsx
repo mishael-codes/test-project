@@ -1,7 +1,6 @@
 import Nav from '../components/nav';
 import Hero from '../components/home/hero'
 import Footer from '../components/home/footer';
-import Modal from '../components/modal';
 
 const Home: React.FC = () => {
 
@@ -9,7 +8,6 @@ const Home: React.FC = () => {
     <>
       <Nav />
       <Hero />
-      <Modal />
       <Footer />
     </>
   );

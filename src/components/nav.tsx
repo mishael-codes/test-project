@@ -6,8 +6,17 @@ import {
   ICommandBarItemProps,
 } from "@fluentui/react";
 import Button from "./button";
+// React imports
+import { useState } from "react";
+// component imports
+import Modal from "./modal";
 
 const Nav: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  }
   const items: ICommandBarItemProps[] = [
     {
       key: "home",
@@ -45,11 +54,12 @@ const Nav: React.FC = () => {
 
   return (
     <Stack horizontal verticalAlign="center" horizontalAlign="space-between" styles={navStyles}>
+      <Modal isModalOpen={isModalOpen} closeModal={toggleModal} />
       <img src={logo} alt="company logo" />
       <Stack horizontal verticalAlign="center" horizontalAlign="end" styles={navBarStyles}>
         <CommandBar items={items} ariaLabel="Navbar" styles={commandBarStyles} />
 
-        <Button text="Contact Us" />
+        <span onClick={toggleModal}><Button text="Contact Us" /></span>
       </Stack>
     </Stack>
   );
