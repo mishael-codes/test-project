@@ -1,4 +1,5 @@
 import { Stack } from "@fluentui/react";
+import Logo from "../../assets/icons/logo.png";
 
 const Footer: React.FC = () => {
   const listItems = [
@@ -12,9 +13,7 @@ const Footer: React.FC = () => {
   const footerStyles = {
     root: {
       height: "520px",
-      backgroundColor: "#CDE8E1",
       padding: "50px",
-      // position: "relative",
     },
 
     h5: {
@@ -37,11 +36,21 @@ const Footer: React.FC = () => {
     },
   };
 
+  const copyrightContainer = {
+    root: {
+      width: "80%",
+      color: "#006B5E",
+      padding: "30px 0",
+      borderTop: "2px solid #006B5E",
+      fontFamily: "Montserrat-Light, sans-serif",
+    },
+  };
+
   return (
-    <>
-      <Stack horizontal verticalAlign="center" horizontalAlign="space-evenly" styles={footerStyles} style={{position: "relative"}}>
+    <div style={{display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", backgroundColor: "#CDE8E1",}}>
+      <Stack horizontal verticalAlign="center" horizontalAlign="space-evenly" styles={footerStyles} style={{position: "relative", width: "100%"}}>
         <Stack.Item>
-          <h5 style={{ position: "absolute", top: "120px", right: "395px",fontFamily:"Montserrat-Bold"}}>Latest</h5>
+          <h5 style={{ position: "absolute", top: "120px", right: "130px",fontFamily:"Montserrat-Bold"}}>Latest</h5>
         </Stack.Item>
         <Stack.Item style={{ display: "flex", flexWrap: "wrap" }}>
           {listItems.map((item, index) => (
@@ -67,7 +76,11 @@ const Footer: React.FC = () => {
           </Stack.Item>
         </Stack>
       </Stack>
-    </>
+      <Stack horizontal verticalAlign="center" horizontalAlign="space-between" styles={copyrightContainer}>
+        <p>Copyright 2024, All Rights Reserved</p>
+        <img src={Logo} alt="" />
+      </Stack>
+    </div>
   );
 };
 
