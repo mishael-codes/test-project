@@ -1,46 +1,104 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@font-face{
+@font-face {
   font-family: Montserrat-Light;
-  src: url('./assets/fonts/static/Montserrat-Light.ttf');
+  src: url("./assets/fonts/static/Montserrat-Light.ttf");
 }
-@font-face{
+@font-face {
   font-family: Montserrat-Medium;
-  src: url('./assets/fonts/static/Montserrat-Regular.ttf');
+  src: url("./assets/fonts/static/Montserrat-Regular.ttf");
 }
-@font-face{
+@font-face {
   font-family: Montserrat-Bold;
-  src: url('./assets/fonts/static/Montserrat-SemiBold.ttf');
+  src: url("./assets/fonts/static/Montserrat-SemiBold.ttf");
 }
-@font-face{
+@font-face {
   font-family: Montserrat-ExtraBold;
-  src: url('./assets/fonts/static/Montserrat-Bold.ttf');
+  src: url("./assets/fonts/static/Montserrat-Bold.ttf");
 }
 
-.top-rect{
+.top-rect {
   top: 0;
   left: 118px;
 }
 
-.bottom-rect{
+.bottom-rect {
   bottom: 0;
   right: 118px;
 }
 
-.top-eclip{
+.top-eclip {
   top: 0;
-  right: 118px
+  right: 118px;
 }
 
-.bottom-eclip{
+.bottom-eclip {
   bottom: 0;
   left: 118px;
 }
 
-.nameInput{
-  margin-right: 5%
+.nameInput {
+  margin-right: 5%;
+}
+
+/* grid */
+
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+  margin-top: -160px;
+}
+.item6 {
+  grid-area: item6;
+  margin-top: -100px;
+}
+.item7 {
+  grid-area: item7;
+}
+.item8 {
+  grid-area: item8;
+}
+.item9 {
+  grid-area: item9;
+  margin-top: -160px;
+}
+.item10 {
+  grid-area: item10;
+  margin-top: -180px;
+}
+.item11 {
+  grid-area: item11;
+  margin-top: -130px;
+}
+.item12 {
+  grid-area: item12;
+}
+.item13 {
+  grid-area: item13;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    "item1 item2 item3"
+    "item4 item2 item6"
+    "item7 item5 item9"
+    "item7 item8 item12"
+    "item10 item11 item13";
 }
