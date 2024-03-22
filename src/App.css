@@ -49,47 +49,60 @@
 
 .item1 {
   grid-area: item1;
+  animation: startUp 1.7s linear alternate infinite;
 }
 .item2 {
   grid-area: item2;
+  animation: startDown 1.7s linear alternate infinite;
 }
 .item3 {
   grid-area: item3;
+  animation: startUp 1.7s linear alternate infinite;
 }
 .item4 {
   grid-area: item4;
+  animation: startUp 1.7s linear alternate infinite;
 }
 .item5 {
   grid-area: item5;
   margin-top: -160px;
+  animation: startDown 1.7s linear alternate infinite;
 }
 .item6 {
   grid-area: item6;
   margin-top: -100px;
+  animation: startUp 1.7s linear alternate infinite;
 }
 .item7 {
   grid-area: item7;
+  animation: startUp 1.7s linear alternate infinite;
 }
 .item8 {
   grid-area: item8;
+  animation: startDown 1.7s linear alternate infinite;
 }
 .item9 {
   grid-area: item9;
   margin-top: -160px;
+  animation: startUp 1.7s linear alternate infinite;
 }
 .item10 {
   grid-area: item10;
   margin-top: -180px;
+  animation: startUp 1.7s linear alternate infinite;
 }
 .item11 {
   grid-area: item11;
   margin-top: -130px;
+  animation: startDown 1.7s linear alternate infinite;
 }
 .item12 {
   grid-area: item12;
+  animation: startUp 1.7s linear alternate infinite;
 }
 .item13 {
   grid-area: item13;
+  animation: startUp 1.7s linear alternate infinite;
 }
 
 .grid-container {
@@ -101,4 +114,22 @@
     "item7 item5 item9"
     "item7 item8 item12"
     "item10 item11 item13";
+}
+
+@keyframes startUp {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes startDown {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }

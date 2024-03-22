@@ -64,8 +64,8 @@ const Grid: React.FC = () => {
           />
         ))}
       </div>
-      <div>
-        <p style={{fontSize: "36px", fontFamily: "Montserrat-Medium, sans-serif"}}>Check out our blog for more</p>
+      <div style={{fontFamily: "Montserrat-Medium, sans-serif", marginTop: "100px", textAlign:"center"}}>
+        <p style={{fontSize: "36px", marginBottom: "10px"}}>Check out our blog for more</p>
         <Button text="Blog" />
       </div>
     </div>
