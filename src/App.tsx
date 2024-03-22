@@ -1,14 +1,13 @@
 import "./App.css";
-import Nav from "./components/nav";
 import NotFound from "./pages/notFound";
-// import Home from "./pages/home";
-function App() {
-  return (
-    <>
-      <Nav />
-      <NotFound />
-    </>
-  );
-}
+import { createBrowserRouter } from "react-router-dom";
+import Home from "./pages/home";
+const App = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  { path: "*", element: <NotFound /> },
+]);
 
 export default App;
